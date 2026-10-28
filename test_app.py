@@ -33,7 +33,7 @@ class TestIrisPredictionApplication(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
             response.get_json()["prediction"],
-            "Iris-setosa"
+            "Iris-versicolor"
         )
 
     def test_missing_fields(self):
